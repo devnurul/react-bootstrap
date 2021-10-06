@@ -1,6 +1,6 @@
 import './App.css';
-
 import Card from './component/news/Cart';
+import TopNews from './component/TopNews/TopNews';
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
           <Card></Card>
           <Card></Card>
           <Card></Card>
+          <TopNews></TopNews>
   
     </div>
   );
