@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../news/Cart';
 
 const TopNews = () => {
 
-    const [articalse, setArticalse] = useState([]);
+    const [articlse, setArticlse] = useState([]);
 
     const url = 'https://newsapi.org/v2/everything?q=tesla&from=2021-09-06&sortBy=publishedAt&apiKey=16bf497084994fd680ddd6703277f66a';
     useEffect(()=>{
         fetch(url)
         .then(res => res.json())
-        .then(data => setArticalse(data.articalse))
+        .then(data => setArticlse(data.articlse))
     },[])
     return (
         <div>
-            <h3>This data{articalse.length}</h3>
+            {
+                articlse.map(article => <Cart> </Cart>)
+            }
         </div>
     );
 };

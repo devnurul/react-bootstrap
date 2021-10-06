@@ -10,6 +10,7 @@ function App() {
           <Card></Card>
           <Card></Card>
           <Card></Card>
+          
           <TopNews></TopNews>
   
     </div>
